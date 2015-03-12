@@ -38,12 +38,12 @@ In any case the built files are in `/dist` so you can run production
 with these assets.
 
 You can configure the backend url with `proxy_url` in the
-`dash_config.js` file.
+`config.js` file.
 
 
 ### Backend
 
-We realize that in real-life companies don't really like calling AWS API
+We realize that in real-life, due to security concerns, companies don't really like calling AWS API
 directly, or don't like going through 3rd party for that.
 
 This is why you get a smart AWS proxy that you can run within your own
