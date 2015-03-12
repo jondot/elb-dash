@@ -1,0 +1,62 @@
+<html>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Roboto:700,400,300,100' rel='stylesheet' type='text/css'>
+<style type="text/css" media="all">
+  body{
+    font-family: "Roboto", sans-serif;
+    background: url('http://wallpaper-download.net/wallpapers/abstract-wallpapers-blurred-background-wallpaper-34795.jpg');
+    color: rgba(255,255,255,0.9);
+  }
+  .elb-tile{
+    margin: 1em;
+    padding:1em;
+    display:inline-block;
+    width:140px;
+    height:140px;
+    white-space:nowrap;
+    overflow:hidden;
+    box-shadow: 0 1px 4px -1px rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.1);
+  }
+  .hosts{
+    margin-top:10px;
+  }
+  .host {
+    display:inline-block;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    width:8px;
+    height: 8px;
+    margin: 1px;
+  }
+  .host:first-child{
+    margin-left:0;
+  }
+  .host-up{
+    background: #4caf50;
+  }
+  .host-down{
+    background: #e51c23;
+  }
+  .name{
+    color: rgba(255,255,255,0.5);
+  }
+  .metrics{
+    margin-top: 4px;
+  }
+  .metrics-numeric-label{
+    font-size: 1.8em;
+    font-weight:700;
+  }
+  .requests {
+    margin-top: 12px;
+  }
+  .latency {
+    margin-top: 12px;
+  }
+</style>
+<body>
+ <div id="content">
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
