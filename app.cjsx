@@ -39,7 +39,8 @@ tree =  {
 
 
 request.get config.proxy_url, (res)=>
-  tree.elbs = _.map res.body, (el)=> { name: el.name, hosts:[], metrics:{}} # [{name:'foo'},{name:'bar'}]
+  tree.elbs = _.filter( _.map(res.body, (el)=> { name: el.name, hosts:[], metrics:{}}),
+                        (elb)=> config.whitelist.length == 0 || _.contains(config.whitelist, elb.name) )
   React.render(<Dash elbs={tree.elbs}/>, document.getElementById("content"))
 
   tree.elbs.map (elb) =>

@@ -40,6 +40,12 @@ with these assets.
 You can configure the backend url with `proxy_url` in the
 `config.js` file.
 
+Configuration
+
+* `proxy_url` - if you ever changed the port or address, change this.
+* `whitelist` - an array of names of ELBs, if you want to cherry-pick
+  what you want displayed. Leave an empty array if you want everything.
+* `refresh_interval_sec` - interval in seconds for updating the dash.
 
 ### Backend
 
