@@ -12,6 +12,8 @@ Prepare a standard node.js environment, and Run these on a terminal:
 
 ```
 $ npm install
+$ npm install -g browser-sync
+$ mkdir dist
 $ ./dash.sh
 $ AWS_REGION=your-region AWS_ACCESS_KEY=your-key AWS_SECRET_KEY=your-secret ./server.sh
 ```
